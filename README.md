@@ -49,3 +49,70 @@ NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/onboarding
 
 GEMINI_API_KEY=
 ```
+
+---
+
+## 🧩 Getting Started – Step-by-Step Setup
+
+Follow these simple steps to set up **EdgeCareer** locally and start contributing:
+
+---
+
+---
+
+### ✅ 1. Fork the Repository ⭐ & Mark as a Star  
+
+- Click the **Star** ⭐ button at the top to support the project.
+- Then click the **Fork** 🍴 button in the top-right corner to create your own copy of this repository.
+
+This helps you work on the project independently and also motivates the maintainers! 🙌
+
+
+---
+
+### ✅ 2. Clone the Forked Repo  
+Open your terminal and run:
+
+```
+git clone https://github.com/your-username/EdgeCareer.git
+cd EdgeCareer
+```
+### ✅ 3. Install Dependencies
+Install all required packages using:
+
+```
+npm install
+```
+
+### ✅ 5. Set Up the Database
+Run Prisma commands to prepare the database:
+
+```
+npx prisma generate
+npx prisma db push
+```
+
+(Optional) Open Prisma Studio to explore your DB:
+```
+npx prisma studio
+```
+
+### ✅ 6. Run the Development Server
+
+```
+npm run dev
+```
+
+### ✅ 7. Start Contributing 💙
+Browse the issues labeled Beginner, Intermediate, or Advanced
+
+Pick one and start solving!
+
+Make changes, commit, and raise a pull request with a clear message.
+
+
+---
+
+Would you like me to add a **"Contributing Guidelines"** section next with example PR instructions or do you also want a separate `CONTRIBUTING.md` file for your repo?
+
+
