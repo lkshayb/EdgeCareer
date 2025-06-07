@@ -8,9 +8,11 @@
 
 ## 🌟 Key Features  
 
-✅ **AI-Powered Job & Resume Analysis** – Uses Gemini API for deep insights  
+✅ **AI-Powered Resume Builder** – Uses Gemini API for deep insights  
 ✅ **Secure Authentication** – Implemented with **Clerk**  
-✅ **Real-Time Subscription System** – Managed via **NeonDB & Prisma**  
+✅ **Real-Time Industry Insights** – Managed via **Gemini API**
+✅ **AI Powered Cover Letter Gnerator** – Only Enter job Role*One click enough*
+✅ **AI-Powered Interview** – Uses Gemini API for deep insights & and find your error give suggestion   
 ✅ **Interactive UI** – Built with **Shadcn UI & Tailwind CSS**  
 ✅ **Event-Driven Architecture** – Powered by **Inngest** for async processing  
 ✅ **Fast & Scalable** – Optimized with **Next.js 15 App Router**  
