@@ -17,7 +17,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import Image from "next/image";
-import features from "@/data/features";
+import { features } from "@/data/features";
 import { testimonial } from "@/data/testimonial";
 import { faqs } from "@/data/faqs";
 import { howItWorks } from "@/data/howItWorks";
@@ -87,7 +87,7 @@ export default function LandingPage() {
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl font-bold mb-4">How It Works</h2>
             <p className="text-muted-foreground">
-              Six simple steps to accelerate your career growth
+              Four simple steps to accelerate your career growth
             </p>
           </div>
 
@@ -157,30 +157,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-{/* CTA Section */}
-      <section className="w-full">
-        <div className="mx-auto py-24 gradient rounded-lg">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold tracking-tighter text-primary-foreground sm:text-4xl md:text-5xl">
-              Ready to Accelerate Your Career?
-            </h2>
-            <p className="mx-auto max-w-[600px] text-primary-foreground/80 md:text-xl">
-              Join thousands of professionals who are advancing their careers
-              with AI-powered guidance.
-            </p>
-            <Link href="/dashboard" passHref>
-              <Button
-                size="lg"
-                variant="secondary"
-                className="h-11 mt-5 animate-bounce"
-              >
-                Start Your Journey Today <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* FAQ Section */}
       <section className="w-full py-12 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
@@ -208,8 +184,29 @@ export default function LandingPage() {
         </div>
       </section>
 
-      
-      
+      {/* CTA Section */}
+      <section className="w-full">
+        <div className="mx-auto py-24 gradient rounded-lg">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold tracking-tighter text-primary-foreground sm:text-4xl md:text-5xl">
+              Ready to Accelerate Your Career?
+            </h2>
+            <p className="mx-auto max-w-[600px] text-primary-foreground/80 md:text-xl">
+              Join thousands of professionals who are advancing their careers
+              with AI-powered guidance.
+            </p>
+            <Link href="/dashboard" passHref>
+              <Button
+                size="lg"
+                variant="secondary"
+                className="h-11 mt-5 animate-bounce"
+              >
+                Start Your Journey Today <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
