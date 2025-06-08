@@ -14,6 +14,7 @@ import {
 import { toast } from "sonner";
 import MDEditor from "@uiw/react-md-editor";
 import { Button } from "@/components/ui/button";
+import { BUTTONS_MENUS } from "@/lib/constants";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
@@ -166,7 +167,7 @@ export default function ResumeBuilder({ initialContent }) {
             ) : (
               <>
                 <Save className="h-4 w-4" />
-                Save
+                {BUTTONS_MENUS.SAVE}
               </>
             )}
           </Button>
@@ -179,7 +180,7 @@ export default function ResumeBuilder({ initialContent }) {
             ) : (
               <>
                 <Download className="h-4 w-4" />
-                Download PDF
+                {BUTTONS_MENUS.DOWNLOAD}
               </>
             )}
           </Button>

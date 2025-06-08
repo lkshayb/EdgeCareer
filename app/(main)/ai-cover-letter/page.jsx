@@ -2,6 +2,7 @@ import { getCoverLetters } from "@/actions/cover-letter";
 import Link from "next/link";
 import { Plus } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { BUTTONS_MENUS } from "@/lib/constants";
 import CoverLetterList from "./_components/cover-letter-list";
 
 export default async function CoverLetterPage() {
@@ -14,7 +15,7 @@ export default async function CoverLetterPage() {
         <Link href="/ai-cover-letter/new">
           <Button>
             <Plus className="h-4 w-4 mr-2" />
-            Create New
+            {BUTTONS_MENUS.CREATE_NEW}
           </Button>
         </Link>
       </div>

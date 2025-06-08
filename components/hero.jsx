@@ -3,6 +3,7 @@
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { BUTTONS_MENUS } from "@/lib/constants";
 import Link from "next/link";
 
 const HeroSection = () => {
@@ -30,26 +31,24 @@ const HeroSection = () => {
     <section className="w-full pt-36 md:pt-48 pb-10">
       <div className="space-y-6 text-center">
         <div className="space-y-6 mx-auto">
-        <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl xl:text-6xl gradient-title animate-gradient">
-  Welcome to EdgeCareer
-  <br />
-  Your AI-Powered Career Assistant
-</h1>
-<p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl">
-  AI-powered career assistant for smarter job search, resume optimization, mock interviews, and industry insights.
-</p>
-
-
+          <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl xl:text-6xl gradient-title animate-gradient">
+            Welcome to EdgeCareer
+            <br />
+            Your AI-Powered Career Assistant
+          </h1>
+          <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl">
+            AI-powered career assistant for smarter job search, resume optimization, mock interviews, and industry insights.
+          </p>
         </div>
         <div className="flex justify-center space-x-4">
           <Link href="/dashboard">
             <Button size="lg" className="px-8">
-              Get Started
+              {BUTTONS_MENUS.GET_STARTED}
             </Button>
           </Link>
           <Link href="/interview">
             <Button size="lg" variant="outline" className="px-8">
-              Interview Prep
+              {BUTTONS_MENUS.INTERVIEW_PREP}
             </Button>
           </Link>
         </div>

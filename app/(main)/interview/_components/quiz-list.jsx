@@ -4,6 +4,7 @@ import { useState } from "react";
 import { format } from "date-fns";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
+import { BUTTONS_MENUS } from "@/lib/constants";
 import {
   Card,
   CardContent,
@@ -37,7 +38,7 @@ export default function QuizList({ assessments }) {
               </CardDescription>
             </div>
             <Button onClick={() => router.push("/interview/mock")}>
-              Start New Quiz
+              {BUTTONS_MENUS.QUIZ}
             </Button>
           </div>
         </CardHeader>

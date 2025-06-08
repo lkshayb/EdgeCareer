@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "./ui/button";
+import { BUTTONS_MENUS } from "@/lib/constants";
 import {
   PenBox,
   LayoutDashboard,
@@ -44,7 +45,7 @@ export default async function Header() {
                 className="hidden md:inline-flex items-center gap-2"
               >
                 <LayoutDashboard className="h-4 w-4" />
-                Industry Insights
+                {BUTTONS_MENUS.DASHBOARD_INSIGHTS}
               </Button>
               <Button variant="ghost" className="md:hidden w-10 h-10 p-0">
                 <LayoutDashboard className="h-4 w-4" />
@@ -56,7 +57,7 @@ export default async function Header() {
               <DropdownMenuTrigger asChild>
                 <Button className="flex items-center gap-2">
                   <StarsIcon className="h-4 w-4" />
-                  <span className="hidden md:block">Growth Tools</span>
+                  <span className="hidden md:block">{BUTTONS_MENUS.GROWTH_TOOLS}</span>
                   <ChevronDown className="h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
@@ -64,7 +65,7 @@ export default async function Header() {
                 <DropdownMenuItem asChild>
                   <Link href="/resume" className="flex items-center gap-2">
                     <FileText className="h-4 w-4" />
-                    Build Resume
+                    {BUTTONS_MENUS.BUILD_RESUME}
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
@@ -73,13 +74,13 @@ export default async function Header() {
                     className="flex items-center gap-2"
                   >
                     <PenBox className="h-4 w-4" />
-                    Cover Letter
+                    {BUTTONS_MENUS.COVER_LETTER}
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <Link href="/interview" className="flex items-center gap-2">
                     <GraduationCap className="h-4 w-4" />
-                    Interview Prep
+                    {BUTTONS_MENUS.INTERVIEW_PREP}
                   </Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
@@ -88,7 +89,7 @@ export default async function Header() {
 
           <SignedOut>
             <SignInButton>
-              <Button variant="outline">Sign In</Button>
+              <Button variant="outline">{BUTTONS_MENUS.SIGN_IN}</Button>
             </SignInButton>
           </SignedOut>
 

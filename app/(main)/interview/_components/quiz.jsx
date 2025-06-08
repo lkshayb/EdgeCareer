@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
+import { BUTTONS_MENUS } from "@/lib/constants";
 import {
   Card,
   CardContent,
@@ -111,7 +112,7 @@ export default function Quiz() {
         </CardContent>
         <CardFooter>
           <Button onClick={generateQuizFn} className="w-full">
-            Start Quiz
+            {BUTTONS_MENUS.START_QUIZ}
           </Button>
         </CardFooter>
       </Card>
@@ -156,7 +157,7 @@ export default function Quiz() {
             variant="outline"
             disabled={!answers[currentQuestion]}
           >
-            Show Explanation
+            {BUTTONS_MENUS.EXPLAIN}
           </Button>
         )}
         <Button

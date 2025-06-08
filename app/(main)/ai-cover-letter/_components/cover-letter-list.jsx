@@ -12,6 +12,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { BUTTONS_MENUS } from "@/lib/constants";
 import {
   AlertDialog,
   AlertDialogAction,
@@ -89,12 +90,12 @@ export default function CoverLetterList({ coverLetters }) {
                       </AlertDialogDescription>
                     </AlertDialogHeader>
                     <AlertDialogFooter>
-                      <AlertDialogCancel>Cancel</AlertDialogCancel>
+                      <AlertDialogCancel>{BUTTONS_MENUS.CANCEL}</AlertDialogCancel>
                       <AlertDialogAction
                         onClick={() => handleDelete(letter.id)}
                         className="bg-destructive text-destructive-foreground hover:bg-destructive/90"
                       >
-                        Delete
+                        {BUTTONS_MENUS.DELETE}
                       </AlertDialogAction>
                     </AlertDialogFooter>
                   </AlertDialogContent>
