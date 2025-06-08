@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { BUTTONS_MENUS } from "@/lib/constants";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   ArrowRight,
@@ -201,7 +202,7 @@ export default function LandingPage() {
                 variant="secondary"
                 className="h-11 mt-5 animate-bounce"
               >
-                Start Your Journey Today <ArrowRight className="ml-2 h-4 w-4" />
+                {BUTTONS_MENUS.START_JOURNEY} <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
           </div>
