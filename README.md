@@ -6,6 +6,15 @@
 ![EdgeCareer Banner](https://github.com/amitkumardemo/EdgeCareer/blob/main/EdgeCareers.png)
 
 
+⚠️ Important for SSoC Contributors (SSoC S4)
+
+🚨 To be eligible for contribution points in Social Summer of Code (SSoC S4), it is mandatory to install and set up the EntelligenceAI – PR Reviewer extension in VS Code.
+🧠 Only those contributors who have properly configured this extension will have their PRs reviewed and counted for SSoC.
+
+✅ This helps us ensure smoother code reviews, automatic tracking, and fair evaluation of all participants.
+
+
+
 ## 🌟 Key Features  
 
 ✅ **AI-Powered Resume Builder** – Uses Gemini API for deep insights  
@@ -109,11 +118,3 @@ Browse the issues labeled Beginner, Intermediate, or Advanced
 Pick one and start solving!
 
 Make changes, commit, and raise a pull request with a clear message.
----
-
-###⚠️ Important for SSoC Contributors (SSoC S4)
-
-🚨 To be eligible for contribution points in Social Summer of Code (SSoC S4), it is mandatory to install and set up the EntelligenceAI – PR Reviewer extension in VS Code.
-🧠 Only those contributors who have properly configured this extension will have their PRs reviewed and counted for SSoC.
-
-✅ This helps us ensure smoother code reviews, automatic tracking, and fair evaluation of all participants.
