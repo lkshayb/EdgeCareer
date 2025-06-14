@@ -13,6 +13,11 @@ export const metadata = {
   title: "EdgeCareer - Your AI-Powered Career Assistant",
   description:
     "Your AI-powered assistant for job search, resume optimization, mock interviews, and career growth.",
+    icons: {
+    icon: "/icons/favicon.ico",
+    shortcut: "/icons/favicon.ico",
+    apple: "/icons/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
