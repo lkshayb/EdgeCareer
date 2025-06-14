@@ -16,6 +16,7 @@ import { features } from "@/data/features";
 import { testimonial } from "@/data/testimonial";
 import { faqs } from "@/data/faqs";
 import { howItWorks } from "@/data/howItWorks";
+import { ArrowRight } from 'lucide-react';
 
 export default function LandingPage() {
   return (
