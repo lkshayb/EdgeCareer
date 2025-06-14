@@ -12,6 +12,11 @@ export const metadata = {
   title: "EdgeCareer - Your AI-Powered Career Assistant",
   description:
     "Your AI-powered assistant for job search, resume optimization, mock interviews, and career growth.",
+    icons: {
+    icon: "/icons/favicon.ico",
+    shortcut: "/icons/favicon.ico",
+    apple: "/icons/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -19,7 +24,7 @@ export default function RootLayout({ children }) {
     <ClerkProvider appearance={{ baseTheme: dark }}>
       <html lang="en" suppressHydrationWarning>
         <head>
-          <link rel="icon" href="/skill.png" sizes="any" />
+         
           {/* SEO Meta Tags */}
           <meta name="description" content={metadata.description} />
           <meta
