@@ -4,6 +4,7 @@ import { Trophy, CheckCircle2, XCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CardContent, CardFooter } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
+import { BUTTONS_MENUS } from "@/lib/constants";
 
 export default function QuizResult({
   result,
@@ -63,7 +64,7 @@ export default function QuizResult({
       {!hideStartNew && (
         <CardFooter>
           <Button onClick={onStartNew} className="w-full">
-            Start New Quiz
+            {BUTTONS_MENUS.QUIZ}
           </Button>
         </CardFooter>
       )}

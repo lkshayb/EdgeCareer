@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { format, parse } from "date-fns";
 import { Button } from "@/components/ui/button";
+import { BUTTONS_MENUS } from "@/lib/constants";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import {
@@ -249,11 +250,11 @@ export function EntryForm({ type, entries, onChange }) {
                 setIsAdding(false);
               }}
             >
-              Cancel
+              {BUTTONS_MENUS.CANCEL}
             </Button>
             <Button type="button" onClick={handleAdd}>
               <PlusCircle className="h-4 w-4 mr-2" />
-              Add Entry
+              {BUTTONS_MENUS.ENTRY}
             </Button>
           </CardFooter>
         </Card>
