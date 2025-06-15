@@ -176,8 +176,6 @@ Feel free to open a discussion or issue if you have questions or proposals.
 ---
 
 <div align="center">
-  <img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif" width="120" />
-  <br />
   <em><b>Your journey starts here — thank you for being a part of EdgeCareer!</b></em>
 </div>
 
