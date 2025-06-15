@@ -30,25 +30,31 @@ const HeroSection = () => {
     <section className="w-full pt-36 md:pt-48 pb-10">
       <div className="space-y-6 text-center">
         <div className="space-y-6 mx-auto">
-        <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl xl:text-6xl gradient-title animate-gradient">
-  Welcome to EdgeCareer
-  <br />
-  Your AI-Powered Career Assistant
-</h1>
-<p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl">
-  AI-powered career assistant for smarter job search, resume optimization, mock interviews, and industry insights.
-</p>
-
-
+          <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl xl:text-6xl gradient-title animate-gradient">
+            Welcome to EdgeCareer
+            <br />
+            Your AI-Powered Career Assistant
+          </h1>
+          <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl">
+            AI-powered career assistant for smarter job search, resume
+            optimization, mock interviews, and industry insights.
+          </p>
         </div>
         <div className="flex justify-center space-x-4">
           <Link href="/dashboard">
-            <Button size="lg" className="px-8">
+            <Button
+              size="lg"
+              className="px-8 transition-transform duration-200 ease-in-out transform hover:scale-105 hover:bg-primary/90"
+            >
               Get Started
             </Button>
           </Link>
           <Link href="/interview">
-            <Button size="lg" variant="outline" className="px-8">
+            <Button
+              size="lg"
+              variant="outline"
+              className="px-8 transition-transform duration-200 ease-in-out transform hover:scale-105 hover:bg-accent hover:text-primary"
+            >
               Interview Prep
             </Button>
           </Link>
