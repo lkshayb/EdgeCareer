@@ -8,7 +8,10 @@ import {
   GraduationCap,
   ChevronDown,
   StarsIcon,
+  MoonIcon,
+  SunIcon,
 } from "lucide-react";
+
 import Link from "next/link";
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 import {
@@ -19,6 +22,9 @@ import {
 } from "@/components/ui/dropdown-menu";
 import Image from "next/image";
 import { checkUser } from "@/lib/checkUser";
+import { useTheme } from "next-themes";
+import ThemSwitch from "./theme-switch";
+
 
 export default async function Header() {
   await checkUser();
@@ -105,6 +111,7 @@ export default async function Header() {
               afterSignOutUrl="/"
             />
           </SignedIn>
+          <ThemSwitch />
         </div>
       </nav>
     </header>
