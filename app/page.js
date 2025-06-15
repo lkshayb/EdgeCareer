@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { BUTTONS_MENUS } from "@/lib/constants";
 import { Card, CardContent } from "@/components/ui/card";
 import HeroSection from "@/components/hero";
+import ScrollToTop from "@/components/ScrollToTop";
 import {
   Accordion,
   AccordionContent,
@@ -239,6 +240,9 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
+
+      {/* Scroll To Top Button */}
+      <ScrollToTop />
     </>
   );
 }
