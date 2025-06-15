@@ -119,13 +119,14 @@ Pick one and start solving!
 
 Make changes, commit, and raise a pull request with a clear message.
 
-Docker Setup
+Docker Setup✅
+
 Run the application in a containerized environment using Docker.
 
 Prerequisites
 Docker desktop installed
 
-1. Build the Docker Image
+1 Build the Docker Image
    and run all this command in terminal:-
 
  docker build `
@@ -134,7 +135,8 @@ Docker desktop installed
    --build-arg DATABASE_URL="your_db_url_here" `
    -t your-app-name .
 
-2. Run the Container
-bash
+2 Run the Container
+
 docker run -p 3000:3000 your-app-name
+
 Replace 3000:3000 with <host-port>:<container-port> as needed.
