@@ -11,6 +11,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import HeroSection from "@/components/hero";
+import ScrollToTop from "@/components/ScrollToTop";
 import {
   Accordion,
   AccordionContent,
@@ -208,6 +209,9 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
+
+      {/* Scroll To Top Button */}
+      <ScrollToTop />
     </>
   );
 }
