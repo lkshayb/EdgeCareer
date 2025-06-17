@@ -245,6 +245,7 @@ const HeroSection = () => {
               />
             </div>
           </SequenceItem>
+
         </div>
 
         <SequenceItem animation="slideUp" delay={1.0}>
@@ -468,6 +469,7 @@ const HeroSection = () => {
                 }}
               />
             </motion.div>
+
           </div>
         </SequenceItem>
 

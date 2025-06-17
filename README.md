@@ -1,5 +1,7 @@
 # 🚀 EdgeCareer – AI-Powered Career Coach  
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 > **Full Stack AI Career Coach built with React 19 + Next.js 15, Tailwind CSS, NeonDB, Prisma, Clerk Authentication, Inngest, Gemini API, and Shadcn UI.**  
 > A **cutting-edge AI-driven career platform** that provides **personalized job recommendations, AI resume reviews, and real-time career insights** to help users land their dream job.  
 
