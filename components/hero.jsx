@@ -61,7 +61,7 @@ const HeroSection = () => {
 
             AI-powered career assistant for smarter job search, resume
             optimization, mock interviews, and industry insights.
-
+          </p>
 
           <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl" id="hero-description">
 
@@ -85,7 +85,7 @@ const HeroSection = () => {
               className="px-8 transition-transform duration-200 ease-in-out transform hover:scale-105 hover:bg-accent hover:text-primary"
             >
               Interview Prep
-
+            </Button>
             <Button size="lg" className="px-8">
               {BUTTONS_MENUS.GET_STARTED}
             </Button>
