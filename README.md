@@ -32,6 +32,8 @@
   - [6. Start Contributing 💙](#-6-start-contributing-)
 - [✅Docker Setup](#docker-setup)
 
+</details>
+
 ---
 
 ## 🌟 Key Features  
