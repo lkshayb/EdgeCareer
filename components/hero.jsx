@@ -100,9 +100,9 @@ const [quoteError, setQuoteError] = useState(null);
 useEffect(() => {
   async function fetchQuote() {
     try {
-      const res = await fetch("https://api.quotable.io/random");
+      const res = await fetch("https://zenquotes.io/api/today", { cache: "no-store" });
       const data = await res.json();
-      setQuote({ q: data.content, a: data.author });
+     setQuote(data[0]);
     } catch (error) {
       setQuoteError("Could not load today's quote.");
     }
@@ -276,11 +276,9 @@ useEffect(() => {
                   </div>
 
                   <p className="text-sm italic text-muted-foreground leading-relaxed">
-                    "{quote.q}"
+                    "{quote.q}" — <span className="font-medium">Amit Kumar, Founder of TechieHelp</span>
                   </p>
-                  <p className="mt-2 text-sm text-foreground font-medium text-right md:text-center">
-                    — {quote.a}
-                  </p>     
+                      
                 </motion.div>
               )}
               <motion.div
