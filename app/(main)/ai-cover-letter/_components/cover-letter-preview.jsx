@@ -11,11 +11,10 @@ const CoverLetterPreview = ({ content }) => {
   const pdfRef = useRef();
 
   const handleDownload = () => {
-    const container = document.createElement("div");
-    container.innerHTML = `<pre style="white-space: pre-wrap; font-family: sans-serif; font-size: 14px; line-height: 1.5">${editableContent}</pre>`;
+    if (!pdfRef.current) return;
 
     html2pdf()
-      .from(container)
+      .from(pdfRef.current)
       .set({
         margin: 0.5,
         filename: "cover-letter.pdf",
@@ -36,12 +35,31 @@ const CoverLetterPreview = ({ content }) => {
 
   return (
     <div className="space-y-4">
+      {/* Editable Textarea */}
       <Textarea
         className="h-[500px] font-mono bg-white text-black"
         value={editableContent}
         onChange={(e) => setEditableContent(e.target.value)}
       />
 
+      {/* PDF Render Area (Hidden) */}
+      <div className="hidden">
+        <div
+          ref={pdfRef}
+          style={{
+            whiteSpace: "pre-wrap",
+            fontFamily: "sans-serif",
+            fontSize: "14px",
+            lineHeight: "1.5",
+            padding: "20px",
+            color: "#000",
+          }}
+        >
+          {editableContent}
+        </div>
+      </div>
+
+      {/* Actions */}
       <div className="flex gap-4">
         <Button onClick={handleDownload}>📄 Download PDF</Button>
         <Button onClick={handleCopy}>📋 Copy to Clipboard</Button>
